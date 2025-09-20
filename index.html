@@ -3,10 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Technical Portfolio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm [Your Name]. Check out my projects below.</p>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <h1 class="text-2xl font-bold text-slate-900">Kiran Marques</h1>
+            <div class="space-x-4">
+                <a href="#introduction" class="text-lg font-medium text-slate-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
+                <a href="#resume" class="text-lg font-medium text-slate-600 hover:text-indigo-600 transition-colors duration-200">Resume</a>
+                <a href="#projects" class="text-lg font-medium text-slate-600 hover:text-indigo-600 transition-colors duration-200">Projects</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="min-h-screen flex items-center justify-center p-8">
+            <div class="max-w-4xl text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6">
+                    Hi, I'm <span class="text-indigo-600">Kiran Marques</span>.
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600">
+                    Technical portfolio in progress!
+                </p>
+                <a href="#projects" class="inline-block mt-8 px-8 py-3 bg-indigo-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    View My Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-16">
+            <h2 class="text-4xl font-bold text-center text-slate-900 mb-12">Resume</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200 max-w-4xl mx-auto">
+                <p class="text-lg text-slate-700 text-center">
+                    This is a placeholder for your resume content. You can embed a PDF here or write out your experience, education, and skills.
+                </p>
+                <!-- Example of a simple resume layout -->
+                <div class="mt-8 space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Education</h3>
+                        <p class="text-slate-600">University Name - Degree, Year</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Experience</h3>
+                        <p class="text-slate-600">Company Name - Job Title, Start Date - End Date</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Skills</h3>
+                        <p class="text-slate-600">e.g., JavaScript, Python, React, AWS, Git</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="text-4xl font-bold text-center text-slate-900 mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 1</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 2</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 3</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 4</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 5</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Project 6</h3>
+                    <p class="text-slate-600 mb-4">A brief description of your project. Mention the technologies used and its purpose.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-200">View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white text-center py-6">
+        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
